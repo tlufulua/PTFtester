@@ -1,7 +1,10 @@
 NAME = PTFtester.a
 CC = @cc
 FLAGS = -Wall -Werror -Wextra
-SRCS = check.c test_s.c test_s_bonus.c test_p.c test_p_bonus.c test_d.c test_d_bonus.c test_percent.c test_percent_bonus.c
+SRCS = check.c test_c.c test_c_bonus.c test_s.c test_s_bonus.c test_p.c \
+	   test_p_bonus.c test_d.c test_d_bonus.c test_i.c test_i_bonus.c \
+	   test_u.c test_u_bonus.c test_x.c test_x_bonus.c test_X.c \
+	   test_X_bonus.c test_percent.c test_percent_bonus.c
 OBJS = $(SRCS:%.c=%.o)
 MAIN = PTFtester.c
 LIBFTPRINTF = ../libftprintf.a
