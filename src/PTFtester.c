@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/20 13:57:31 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/11 09:17:55 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/12 20:44:19 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 int	main(int argc, char	**argv)
 {
-	char	*str;
-
-	str = "Hola Mundo";
-	
 	if (argc == 1 || !strcmp(argv[1], "leaks") || 
 			!strcmp(argv[1], "m") || !strcmp(argv[1], "mandatory"))
 	{

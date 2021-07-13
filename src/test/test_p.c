@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_p_bonus.c                                     :+:      :+:    :+:   */
+/*   test_p.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 21:19:01 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/11 07:58:50 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/12 18:53:53 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PTFtester.h"
+#include "../../inc/PTFtester.h"
 
-void	test_p_bonus()
+void	test_p()
 {
 	char	*str;
 	int		n;
@@ -21,17 +21,17 @@ void	test_p_bonus()
 	n = 101;
 	str = "Hello";
 	x = 1;
-	printf("\x1b[34mBonus\x1b[0m\n");
+	printf("\x1b[34mMandatory\x1b[0m\n");
 	//1
-	check(x++, printf("original: %22p", str), \
-			ft_printf("ftprintf: %22p\n", str));
+	check(x++, printf("original: %p", str), \
+		ft_printf("ftprintf: %p\n", str));
 	//2
-	check(x++, printf("original: %-22p", str), \
-			ft_printf("ftprintf: %-22p\n", str));
+	check(x++, printf("original: %p", &str), \
+		ft_printf("ftprintf: %p\n", &str));
 	//3
-	check(x++, printf("original: %*p", -10, &n), \
-			ft_printf("ftprintf: %*p\n", -10, &n));
+	check(x++, printf("original: %p%p", &str, str), \
+		ft_printf("ftprintf: %p%p\n", &str, str));
 	//4
-	check(x++, printf("original: %-*p", -10, &n), \
-			ft_printf("ftprintf: %-*p\n", -10, &n));
+	check(x++, printf("original: %p-0", &str), \
+		ft_printf("ftprintf: %p-0\n", &str));
 }

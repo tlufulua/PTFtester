@@ -6,11 +6,11 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 04:48:32 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/11 07:00:27 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/12 18:52:05 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PTFtester.h"
+#include "../../inc/PTFtester.h"
 
 void	test_c()
 {

@@ -6,15 +6,16 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 21:41:30 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/11 09:17:58 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/12 18:59:57 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "../ft_printf.h"
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
+
+int		ft_printf(const char *format, ...);
 
 void	test_c();
 void	test_s();
