@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 19:13:36 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/14 22:51:20 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/19 12:45:41 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,10 @@ int	main(int argc, char	**argv)
 					(argv[2] && !strcmp(argv[2], "leaks")))
 			system("leaks test");
 	}
-	if (!strcmp(argv[1], "a") || !strcmp(argv[1], "all") || \
-		!strcmp(argv[1],"b") || !strcmp(argv[1], "bonus"))
+	else if (argv[1] && (!strcmp(argv[1], "a") || !strcmp(argv[1], "all") || \
+		!strcmp(argv[1],"b") || !strcmp(argv[1], "bonus")))
 		printf("No bonus files\n");
 	else
 		printf("Unknown command\n");
-	
 	return (0);
 }
