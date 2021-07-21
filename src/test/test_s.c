@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/09 23:00:29 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/16 20:51:32 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/22 00:42:55 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,7 @@ void	test_s()
 	//7
 	check(x++, printf("original: %s %s ", "0", "1"), \
 			ft_printf("ftprintf: %s %s \n", "0", "1"));
+	//8
+	check(x++, printf("original: %s", NULL), \
+			ft_printf("ftprintf: %s\n", NULL));
 }

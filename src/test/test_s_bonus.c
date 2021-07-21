@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/09 23:00:29 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/16 01:26:28 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/22 00:43:33 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	test_s_bonus()
 	//12
 	check(x++, printf("original: %.0s ", ""), \
 			ft_printf_bonus("ftprintf: %.0s \n", ""));
-/*	//13
+	//13
 	check(x++, printf("original: %s ", NULL), \
 			ft_printf_bonus("ftprintf: %s \n", NULL));
 	//14
@@ -66,4 +66,4 @@ void	test_s_bonus()
 	//15
 	check(x++, printf("original: %.*s ", 3, NULL), \
 			ft_printf_bonus("ftprintf: %.*s \n", 3, NULL));
-*/}
+}
