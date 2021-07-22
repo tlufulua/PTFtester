@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 00:07:13 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/16 04:43:55 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/07/22 17:55:26 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,13 @@ void	test_d_bonus()
 	//12
 	check(x++, printf("original: %15d", INT_MAX), \
 			ft_printf_bonus("ftprintf: %15d\n", INT_MAX));
+	//13
+	check(x++, printf("original: %+15d", INT_MAX), \
+			ft_printf_bonus("ftprintf: %+15d\n", INT_MAX));
+	//14
+	check(x++, printf("original: %+15d", -56), \
+			ft_printf_bonus("ftprintf: %+15d\n", -56));
+	//15
+	check(x++, printf("original: %+015i", 56), \
+			ft_printf_bonus("ftprintf: %+015i\n", 56));
 }
