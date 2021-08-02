@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 08:40:05 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/14 21:36:17 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/02 19:37:39 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,7 @@ void	test_hex_bonus()
 	//10
 	check(x++, printf("original: %-3.4x", UINT_MAX), 
 			ft_printf_bonus("ftprintf: %-3.4x\n", UINT_MAX));
+	//11
+	check(x++, printf("original: %.0x", 0), 
+			ft_printf_bonus("ftprintf: %.0x\n", 0));
 }

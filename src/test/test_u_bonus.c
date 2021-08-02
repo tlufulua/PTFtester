@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 08:40:05 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/14 21:35:26 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/02 19:36:56 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,7 @@ void	test_u_bonus()
 	//10
 	check(x++, printf("original: %012.2u", UINT_MAX), 
 			ft_printf_bonus("ftprintf: %012.2u\n", UINT_MAX));
+	//11
+	check(x++, printf("original: %.0u", 0), 
+			ft_printf_bonus("ftprintf: %0.0u\n", 0));
 }

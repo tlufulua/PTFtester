@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 00:07:13 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/22 17:54:59 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/02 19:29:29 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,7 @@ void	test_i_bonus()
 	//16
 	check(x++, printf("original: %+015i", 56), \
 			ft_printf_bonus("ftprintf: %+015i\n", 56));
+	//17
+	check(x++, printf("original: %.0i", 0), \
+			ft_printf_bonus("ftprintf: %.0i\n", 0));
 }
