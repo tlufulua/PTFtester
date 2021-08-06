@@ -14,6 +14,7 @@ This instruction checks only the bonus files.
 	- a or "all": make mandatory and bonus part (Ex: ./PTFtester a)
 	- b or "bonus": make only bonus part
 	- m or "mandatory": make only mandatory part.
+
 The test checks leaks, so if you execute ./PTFtester a leaks, for example, the test executes system("PTFtester leaks").
 
 Thanks for using this code! If you like it, give me a star :).
