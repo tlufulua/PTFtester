@@ -1,4 +1,4 @@
-PTFtester it's a very simple test for 42 school's ft_printf proyect. It's created for the 2021 summer subject, where flags are considered bonus, not mandatory.
+PTFtester it's a very simple tester for 42 school's ft_printf proyect. It's created for the 2021 summer subject, where flags are considered bonus, not mandatory.
 
 It compares the result of the original printf and the ft_printf. If the number of printf chars in printf are the same in ft_printf the test says OK!. Otherwise it's a KO. PTFtester also print the result of both functions, so you can check if ft_printf works like the original printf.
 
