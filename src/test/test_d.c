@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 00:07:13 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/16 20:50:40 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/07 16:26:10 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,12 @@ void	test_d()
 	check(x++, printf("original: %d", 42), \
 			ft_printf("ftprintf: %d\n", 42));
 	//2
-	check(x++, printf("original: %d%d", 42, 210), \
-			ft_printf("ftprintf: %d%d\n", 42, 210));
+	check(x++, printf("original: %d%i", 42, 210), \
+			ft_printf("ftprintf: %d%i\n", 42, 210));
+	//3
+	check(x++, printf("original: %d%i ", -42, 210), \
+			ft_printf("ftprintf: %d%i \n", -42, 210));
+	//4
+	check(x++, printf("original: %d %i ", INT_MIN, INT_MAX), \
+			ft_printf("ftprintf: %d %i \n", INT_MIN, INT_MAX));
 }

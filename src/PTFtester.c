@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/14 19:13:36 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/06 13:40:56 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/07 16:52:43 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	main(int argc, char	**argv)
 		test_u();
 		printf("\x1b[33m---HExADECIMAL (%%x)---\x1b[0m\n");
 		test_hex();
-		printf("\x1b[33m---HEXADECIMAL (%%x)---\x1b[0m\n");
+		printf("\x1b[33m---HEXADECIMAL (%%X)---\x1b[0m\n");
 		test_X();
 		printf("\x1b[33m-----PERCENT (%%%%)------\x1b[0m\n");
 		test_percent();
@@ -41,7 +41,7 @@ int	main(int argc, char	**argv)
 	}
 	else if (argv[1] && (!strcmp(argv[1], "a") || !strcmp(argv[1], "all") || \
 		!strcmp(argv[1],"b") || !strcmp(argv[1], "bonus")))
-		printf("No bonus files\n");
+		printf("No bonus files. Please do 'make bonus'\n");
 	else
 		printf("Unknown command\n");
 	return (0);

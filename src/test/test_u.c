@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 08:40:05 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/16 20:51:41 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/07 20:22:25 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,10 @@ void	test_u()
 	//6
 	check(x++, printf("original: %u", -0), 
 			ft_printf("ftprintf: %u\n", -0));
+	//7
+	check(x++, printf("original: %u", LONG_MIN), 
+			ft_printf("ftprintf: %u\n", LONG_MIN));
+	//8
+	check(x++, printf("original: %u", LONG_MAX), 
+			ft_printf("ftprintf: %u\n", LONG_MAX));
 }

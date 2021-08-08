@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 04:48:32 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/07/22 01:07:14 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/07 16:59:30 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,9 @@ void	test_c()
 	check(x++, printf("original: %c%c%c%c%c", 'H', 'e', 'l', 'l', 'o'), 
 			ft_printf("ftprintf: %c%c%c%c%c\n", 'H', 'e', 'l', 'l', 'o'));
 	//10
-	check(x++, printf("original: %c %c %c ", '0', '0', '1'), 
+	check(x++, printf("original: %c %c %c ", '0', '0', '1'),
 			ft_printf("ftprintf: %c %c %c \n", '0', '0', '1'));
+	//11
+	check(x++, printf("original: %c %c %c ", '2', 0, '1'),
+			ft_printf("ftprintf: %c %c %c \n", '2', 0, '1'));
 }

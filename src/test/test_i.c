@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 00:07:13 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/06 14:42:11 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/07 16:25:37 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	test_i()
 	check(x++, printf("original: %i%i", 42, 210), \
 			ft_printf("ftprintf: %i%i\n", 42, 210));
 	//3
-	check(x++, printf("original: %i%i ", 42, 210), \
-			ft_printf("ftprintf: %i%i \n", 42, 210));
+	check(x++, printf("original: %i%i ", -42, 210), \
+			ft_printf("ftprintf: %i%i \n", -42, 210));
 	//4
 	check(x++, printf("original: %i %i ", INT_MIN, INT_MAX), \
 			ft_printf("ftprintf: %i %i \n", INT_MIN, INT_MAX));
