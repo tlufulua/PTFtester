@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/09 23:00:29 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/07 16:50:57 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:51:28 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,20 +37,20 @@ void	test_s_bonus()
 	check(x++, printf("original: %-4s %-4s ", "123", "4567"), \
 			ft_printf("ftprintf: %-4s %-4s \n", "123", "4567"));
 	//6
-	check(x++, printf("original: %*s %*s ", 1, "123", 10, "4567"), \
-			ft_printf("ftprintf: %*s %*s \n", 1, "123", 10, "4567"));
+	check(x++, printf("original: %1s %10s ", "123", "4567"), \
+			ft_printf("ftprintf: %1s %10s \n", "123", "4567"));
 	//7
-	check(x++, printf("original: %*.s %.1s ", 10, "123", "4567"), \
-			ft_printf("ftprintf: %*.s %.1s \n", 10, "123", "4567"));
+	check(x++, printf("original: %10.s %.1s ", "123", "4567"), \
+			ft_printf("ftprintf: %10.s %.1s \n", "123", "4567"));
 	//8
-	check(x++, printf("original: %*.3s %.3s ", 10, "123", "4567"), \
-			ft_printf("ftprintf: %*.3s %.3s \n", 10, "123", "4567"));
+	check(x++, printf("original: %10.3s %.3s ", "123", "4567"), \
+			ft_printf("ftprintf: %10.3s %.3s \n", "123", "4567"));
 	//9
 	check(x++, printf("original: %*.6s %.6s ", 10, "123", "4567"), \
 			ft_printf("ftprintf: %*.6s %.6s \n", 10, "123", "4567"));
 	//10
-	check(x++, printf("original: %*.6s %.6s ", 10, "", "4567"), \
-			ft_printf("ftprintf: %*.6s %.6s \n", 10, "", "4567"));
+	check(x++, printf("original: %10.6s %.6s ", "", "4567"), \
+			ft_printf("ftprintf: %10.6s %.6s \n", "", "4567"));
 	//11
 	check(x++, printf("original: %.s ", ""), \
 			ft_printf("ftprintf: %.s \n", ""));

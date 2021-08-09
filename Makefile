@@ -1,7 +1,7 @@
 NAME				= PTFtester
 CC					= @gcc
 LIBFTPRINTF			= ftprintf
-CFLAGS				= -I $(INC)
+CFLAGS				= -Wno-long-long -I $(INC)
 LDFLAGS 			= -l$(LIBFTPRINTF) -L$(PRINTF_DIR)
 SRC_DIR 			= src/
 SRC					= check.c

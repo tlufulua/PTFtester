@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/11 04:52:15 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/07 21:34:04 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:45:25 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,23 @@ void	test_c_bonus()
 	check(x++, printf("original: %-10c", 'H'), 
 			ft_printf("ftprintf: %-10c\n", 'H'));
 	//3
-	check(x++, printf("original: %*c", 0, 'H'), 
-			ft_printf("ftprintf: %*c\n", 0, 'H'));
+	check(x++, printf("original: %0c", 'H'), 
+			ft_printf("ftprintf: %0c\n", 'H'));
 	//4
-	check(x++, printf("original: %*c", 4, 'H'), 
-			ft_printf("ftprintf: %*c\n", 4, 'H'));
+	check(x++, printf("original: %4c", 'H'), 
+			ft_printf("ftprintf: %4c\n", 'H'));
 	//5
-	check(x++, printf("original: %*c", -4, 'H'), 
-			ft_printf("ftprintf: %*c\n", -4, 'H'));
+	check(x++, printf("original: %-4c", 'H'), 
+			ft_printf("ftprintf: %-4c\n", 'H'));
 	//6
-	check(x++, printf("original: -%*c%-*c", 4, 'H', 2, 'o'), 
-			ft_printf("ftprintf: -%*c%-*c\n", 4, 'H', 2, 'o'));
+	check(x++, printf("original: -%4c%-2c", 'H', 'o'), 
+			ft_printf("ftprintf: -%4c%-2c\n", 'H', 'o'));
 	//7
 	check(x++, printf("original: %.c", 'H'), 
 			ft_printf("ftprintf: %.c\n", 'H'));
 	//8
-	check(x++, printf("original: '%*c Hello World!'", 20, 0), 
-			ft_printf("ftprintf: '%*c Hello World!'\n", 20, 0));
+	check(x++, printf("original: '%20c Hello World!'", 0), 
+			ft_printf("ftprintf: '%20c Hello World!'\n", 0));
 	//9
 	check(x++, printf("original: '%-1c %-2c %-3c'", '0', 0, '1'), 
 			ft_printf("ftprintf: '%-1c %-2c %-3c'\n", '0', 0, '1'));

@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 21:19:01 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/07 16:51:09 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:50:12 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ void	test_p_bonus()
 	check(x++, printf("original: %-22p", str), \
 			ft_printf("ftprintf: %-22p\n", str));
 	//3
-	check(x++, printf("original: %*p", -10, &n), \
-			ft_printf("ftprintf: %*p\n", -10, &n));
+	check(x++, printf("original: %-10p", -10, &n), \
+			ft_printf("ftprintf: %-10p\n", -10, &n));
 	//4
-	check(x++, printf("original: %-*p", -10, &n), \
-			ft_printf("ftprintf: %-*p\n", -10, &n));
+	check(x++, printf("original: %--10p", -10, &n), \
+			ft_printf("ftprintf: %--10p\n", -10, &n));
 }

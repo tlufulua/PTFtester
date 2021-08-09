@@ -6,7 +6,7 @@
 /*   By: tlufulua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 00:07:13 by tlufulua          #+#    #+#             */
-/*   Updated: 2021/08/07 16:51:31 by tlufulua         ###   ########.fr       */
+/*   Updated: 2021/08/09 19:49:08 by tlufulua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,45 +28,42 @@ void	test_i_bonus()
 	check(x++, printf("original: %-5i", -42), \
 			ft_printf("ftprintf: %-5i\n", -42));
 	//4
-	check(x++, printf("original: %*i", 5, -42), \
-			ft_printf("ftprintf: %*i\n", 5, -42));
+	check(x++, printf("original: %--5i", -42), \
+			ft_printf("ftprintf: %--5i\n", -42));
 	//5
-	check(x++, printf("original: %*i", -5, -42), \
-			ft_printf("ftprintf: %*i\n", -5, -42));
-	//6
-	check(x++, printf("original: %-*i", -5, -42), \
-			ft_printf("ftprintf: %-*i\n", -5, -42));
-	//7
 	check(x++, printf("original: %0*i", 5, -42), \
 			ft_printf("ftprintf: %0*i\n", 5, -42));
-	//8
+	//6
 	check(x++, printf("original: %5.7i", 42), \
 			ft_printf("ftprintf: %5.7i\n", 42));
+	//7
+	check(x++, printf("original: %5.7i", 42), \
+			ft_printf("ftprintf: %5.7i\n", 42));
+	//8
+	check(x++, printf("original: %5.7i%i", 42, 210), \
+			ft_printf("ftprintf: %5.7i%i\n", 42, 210));
 	//9
-	check(x++, printf("original: %*.7i", 5, 42), \
-			ft_printf("ftprintf: %*.7i\n", 5, 42));
+	check(x++, printf("original: %5.7i%-i", 42, 210), \
+			ft_printf("ftprintf: %5.7i%-i\n", 42, 210));
 	//10
-	check(x++, printf("original: %*.7i%i", 5, 42, 210), \
-			ft_printf("ftprintf: %*.7i%i\n", 5, 42, 210));
-	//11
-	check(x++, printf("original: %*.7i%-i", 5, 42, 210), \
-			ft_printf("ftprintf: %*.7i%-i\n", 5, 42, 210));
-	//12
 	check(x++, printf("original: %15i", INT_MAX), \
 			ft_printf("ftprintf: %15i\n", INT_MAX));
-	//13
-	check(x++, printf("original: %*.*i", 23, 21, 20), \
-			ft_printf("ftprintf: %*.*i\n", 23, 21, 20));
-	//14
+	//11
+	check(x++, printf("original: %23.21i", 20), \
+			ft_printf("ftprintf: %23.21i\n", 20));
+	//12
 	check(x++, printf("original: %+15i", INT_MAX), \
 			ft_printf("ftprintf: %+15i\n", INT_MAX));
-	//15
+	//13
 	check(x++, printf("original: %+15i", -56), \
 			ft_printf("ftprintf: %+15i\n", -56));
-	//16
+	//14
 	check(x++, printf("original: %+015i", 56), \
 			ft_printf("ftprintf: %+015i\n", 56));
-	//17
+	//15
 	check(x++, printf("original: %.0i", 0), \
 			ft_printf("ftprintf: %.0i\n", 0));
+	//16
+	check(x++, printf("original: %04i", -42), \
+			ft_printf("ftprintf: %04i\n", -42));
 }
